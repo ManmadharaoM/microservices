@@ -1,5 +1,6 @@
 server:
   port: 9092
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/microservice
