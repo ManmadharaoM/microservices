@@ -27,7 +27,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
+# Build without running tests
+    - name: Build and package without tests
+      run: mvn clean package -DskipTests
     # Debug - List directory structure to verify paths
     - name: List directory structure
       run: ls -R
